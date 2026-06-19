@@ -8,7 +8,7 @@ process_png() {
     png="$1"
     txt="${png%.png}.txt"
     echo "Processing: $png -> $txt"
-    uv run "$SCRIPT_DIR/ocr-simple.py" "$png" > "$txt"
+    uv run "$SCRIPT_DIR/ocr-simple.py" --lang grc "$png" > "$txt"
 }
 export -f process_png
 
