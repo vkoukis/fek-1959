@@ -13,7 +13,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ```bash
 uv sync
-sudo apt install -y tesseract-ocr
+sudo apt install -y tesseract-ocr tesseract-ocr-grc
 ```
 
 ## Usage
@@ -22,5 +22,6 @@ Run the scripts:
 
 ```bash
 uv run query.py
-uv run ocr-simple.py image.png
+uv run ocr-simple.py image.png           # English (default)
+uv run ocr-simple.py --lang grc image.png # Ancient Greek
 ```
