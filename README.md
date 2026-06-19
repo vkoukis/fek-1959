@@ -8,23 +8,19 @@ Install [uv](https://docs.astral.sh/uv/):
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
+. ~/.bashrc
+```
+
+```bash
+uv sync
+sudo apt install -y tesseract-ocr
 ```
 
 ## Usage
 
-Run the script:
+Run the scripts:
 
 ```bash
 uv run query.py
-```
-
-## OCR
-
-```bash
-sudo apt install -y tesseract-ocr
-uv add pytesseract Pillow
-```
-
-```bash
 uv run ocr-simple.py image.png
 ```
