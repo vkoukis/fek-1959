@@ -17,3 +17,14 @@ Run the script:
 ```bash
 uv run query.py
 ```
+
+## OCR
+
+```bash
+sudo apt install -y tesseract-ocr
+uv add pytesseract Pillow
+```
+
+```bash
+uv run ocr-simple.py image.png
+```
